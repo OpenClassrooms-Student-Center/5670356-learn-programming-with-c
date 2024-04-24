@@ -1,73 +1,49 @@
-﻿# Activité C#
+﻿# Instructions
 
-Création d'un gestionnaire de compte bancaire
+## Creating a Banking Account Manager
 
-Créez une application console pour gérer un compte courant et un compte épargne. Implémentez la possibilité d'afficher les informations sur le titulaire de ces comptes et leurs soldes, ainsi que d'effectuer des dépôts et des retraits.
+Create a console application to manage a Checking account and Savings account. Implement the ability to view account information and balances, make deposits, and make withdrawals.
 
-Lorsque l'application se termine, écrivez toutes les transactions du compte courant et du compte épargne dans un fichier texte.
+When the application exits, write all Checking and Savings transactions to a text file.
 
-__Incluez les fonctionnalités suivantes :__
+### Include the following features:
 
-* Afficher les informations sur le titulaire du compte, telles que le nom et le numéro de compte du titulaire du compte
-* Afficher le solde du compte courant
-* Afficher le solde du compte d'épargne
-* Effectuer un dépôt sur le compte courant
-* Effectuer un dépôt sur le compte épargne
-* Effectuer un retrait sur le compte courant
-* Effectuer un retrait sur le compte épargne
-* Quitter l'application
-* Lorsque vous cliquez sur le bouton bleu Run, affichez le message :
+- View Account Holder Information - such as the account holder's name and account number.
+- View Checking account balance
+- View Savings account balance
+- Deposit funds into Checking
+- Deposit funds into Savings
+- Withdraw funds from Checking
+- Withdraw funds from Savings.
+- Exit When you click the blue Run button, display the message:
+- Hit Enter to Display Banking Menu Upon Enter, the menu displays:
 
-```
-Appuyez sur Entrée pour afficher le menu.
-  ```
-  
-Lorsque l'utilisateur appuie sur Entrée, le menu s'affiche :
-
-```
-Veuillez sélectionner une option ci-dessous :
-[I] Voir les informations sur le titulaire du compte
-[CS] Compte courant - Consulter le solde
-[CD] Compte courant - Déposer des fonds
-[CR] Compte courant - Retirer des fonds
-[ES] Compte épargne - Consulter le solde
-[ED] Compte épargne - Déposer des fonds
-[ER] Compte épargne - Retirer des fonds
-[X] Quitter
+- ```
+Please select an option below: 
+[I] View Account Holder Information 
+[CB] Checking - View Balance 
+[CD] Checking - Deposit Funds 
+[CW] Checking - Withdraw Funds 
+[SB] Savings - View Balance 
+[SD] Savings - Deposit Funds 
+[SW] Savings - Withdraw Funds 
+[X] Exit 
 ```
 
-Lorsque vous saisissez l'une des séquences de touches entre crochets, la fonction correspondante est exécutée.
+- When you enter one of the key sequences identified in brackets, that feature is executed.
 
-Par exemple, si vous tapez « CD » et que vous validez, le message suivant s'affiche:
+For example, if you typed "CD" and Enter, the following would display.
 
-```
-Quel montant souhaitez-vous déposer ? 
-  ```
-  
-Vous tapez « 20 » et appuyez sur Entrée.
+How much would you like to deposit? You type "20" and hit Enter.
 
-```
-Vous avez déposé : 20 €.
-Appuyez sur Entrée pour afficher le menu.
+You deposited: $20 Hit Enter to Display Banking Menu Type Enter to see the banking menu again. Then type "CB"
 
-  ```
-Appuyez sur Entrée pour afficher à nouveau le menu, puis tapez « CS ».
+Checking Account Balance: $20 Hit Enter to Display Banking Menu Other application features work in a similar manner.
 
-```
-Solde du compte courant : 20 €
-Appuyez sur Entrée pour afficher le menu.
-  ```
-  
-Le même principe s'applique pour les autres fonctions de l'application.
+In this excercise you should be using the following:
 
-__Dans cet exercice, vous devriez utiliser les notions suivantes :__
-
-* Héritage
-* Constructeurs
-* Liste
-* Boucle
-* Propriétés
-
-
-
-  
+- Inheritance
+- Constructors
+- List
+- Loop
+- Properties
