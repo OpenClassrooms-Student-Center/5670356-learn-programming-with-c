@@ -1,4 +1,4 @@
-﻿using P2C4._1
+﻿using P2C4._1;
 
 // The program displays the average temperature from values provided as command-line arguments
 
