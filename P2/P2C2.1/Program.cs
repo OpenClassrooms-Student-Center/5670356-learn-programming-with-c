@@ -10,10 +10,10 @@ using P2C2._1;
 
 if (args.Count() == 1)
 {
-    SayHelloTo(args[0]);
+    ConditionnalHello.SayHelloTo(args[0]);
 }
 else
 {
-    SayHelloTo("world");
+    ConditionnalHello.SayHelloTo("world");
 }
 
