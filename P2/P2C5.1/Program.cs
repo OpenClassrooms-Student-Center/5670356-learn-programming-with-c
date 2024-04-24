@@ -40,7 +40,7 @@ else
 /// Prompt user for URL
 /// </summary>
 /// <returns>Prompt user for URL</returns>
-public static string AskForUrl()
+static string AskForUrl()
 {
     Console.WriteLine("Please enter a valid URL");
     string url = Console.ReadLine();
@@ -52,7 +52,7 @@ public static string AskForUrl()
 /// </summary>
 /// <param name="urlString"></param>
 /// <returns>true if the URL is well formed, else false</returns>
-private static bool IsValidURL(string urlString)
+static bool IsValidURL(string urlString)
 {
     if (Uri.IsWellFormedUriString(urlString, UriKind.Absolute))
     {
