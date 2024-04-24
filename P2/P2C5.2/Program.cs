@@ -1,29 +1,29 @@
-﻿// Définir l'URL à laquelle se connecter
+﻿// define the string representation of the URL to connect to
 using System.Net;
 
-string chaineUrl = DonneeUtilisateur.DemanderUneUrl();
+string urlString = UserInput.AskForUrl();
 
-Console.WriteLine(RecupererContenu(chaineUrl));
+Console.WriteLine(GetContent(urlString));
 
 /// <summary>
-/// Retourner le contenu de l'URL
+/// Return the content from the URL
 /// </summary>
-/// <param name="url">L'adresse Web dont le contenu sera renvoyé</param>
-string RecupererContenu(string url)
+/// <param name="url">The web address from which content will be returned</param>
+string GetContent(string url)
 {
-    string contenu = "";
+    string content = "";
 
     try
     {
-        using (WebClient client = new WebClient())
+        using (WebClient webClient = new WebClient())
         {
-            contenu = client.DownloadString(url);
+            content = webClient.DownloadString(url);
         }
     }
     catch (WebException e)
     {
-        Console.WriteLine("Impossible d'établir une connexion - " + e.ToString());
+        Console.WriteLine("Cannot establish connection - " + e.ToString());
     }
 
-    return contenu;
+    return content;
 }

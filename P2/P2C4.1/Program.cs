@@ -1,15 +1,16 @@
-﻿using P2C4._1;
+﻿using P2C4._1
 
-// Affiche la température moyenne à partir des valeurs fournies comme arguments en ligne de commande
-List<int> temperaturesEnregistreDegresCelcius = new List<int>();
+// The program displays the average temperature from values provided as command-line arguments
 
-// Remplir la liste à partir des valeurs fournies comme arguments en ligne de commande
-foreach (string stringRepresentationTemperature in args)
+List<int> recordedTemperaturesInDegreesCelcius = new List<int>();
+
+// Fill the list from values provided as command-line arguments
+foreach (string stringRepresentationOfTemperature in args)
 {
-    int temperature = int.Parse(stringRepresentationTemperature);
-    temperaturesEnregistreDegresCelcius.Add(temperature);
+    int temperature = int.Parse(stringRepresentationOfTemperature);
+    recordedTemperaturesInDegreesCelcius.Add(temperature);
 }
 
-// Calculer et afficher la température moyenne
-int temperatureMoyenne = MathSimple.CalculMoyenne(temperaturesEnregistreDegresCelcius);
-Console.WriteLine("La température moyenne est " + temperatureMoyenne);
+// Calculate and print the average temperature
+int averageTemperature = SimpleMath.CalculateAverage(recordedTemperaturesInDegreesCelcius);
+Console.WriteLine("The average temperature is " + averageTemperature);

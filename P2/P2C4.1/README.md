@@ -1,5 +1,6 @@
-﻿# Math simples
-Dans le terminal ou console Powershell dans Visual Studio, saisissez "dotnet run 4 7 9 16" et appuyez sur la touche Entrée.
-Remarquez que la sortie dit, La température moyenne est 9.
-Essayez d'autres arguments comme "dotnet run 4 7".
-Remarquez que le résultat indique La température moyenne est 5.
+﻿# Simple Math
+
+- In the terminal or PowerShell console in Visual Studio, type "dotnet run 4 7 9 16" and press Enter.
+- Notice that the output says, "The average temperature is 9."
+- Try other arguments like "dotnet run 4 7".
+- Notice that the result indicates "The average temperature is 5."

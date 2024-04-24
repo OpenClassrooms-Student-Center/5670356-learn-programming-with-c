@@ -1,38 +1,38 @@
 ﻿using P2C5._3;
 using System.Net;
 
-string chaineUrl = DonneeUtilisateur.DemanderUneUrl();
+string urlString = UserInput.AskForUrl();
 
-var contenu = RecupererContenu(chaineUrl);
+string content = GetContent(urlString);
 
 try
 {
-    EcrireFichier.Ecrire(contenu, "output.txt");
+    WriteFile.WriteToFile(content, "output.txt");
 }
 catch (IOException e)
 {
-    Console.WriteLine("Impossible d'écrire dans le fichier - " + e.ToString());
+    Console.WriteLine("Could not write file - " + e.ToString());
 }
 
 /// <summary>
-/// Retourner le contenu de l'URL
+/// Return the content from the URL
 /// </summary>
-/// <param name="url">L'URL de la ressource</param>
-static string RecupererContenu(string url)
+/// <param name="url">The web address of the network resource</param>
+static string GetContent(string url)
 {
-    string contenu = "";
+    string content = "";
 
     try
     {
         using (WebClient webClient = new WebClient())
         {
-            contenu = webClient.DownloadString(url);
+            content = webClient.DownloadString(url);
         }
     }
     catch (WebException e)
     {
-        Console.WriteLine("Impossible d'établir une connexion - " + e.ToString());
+        Console.WriteLine("Cannot establish connection - " + e.ToString());
     }
 
-    return contenu;
+    return content;
 }

@@ -1,6 +1,6 @@
 ﻿namespace P1C4;
 
-public class Livre
+public class Book
 {
     public string Title { get; set; }
     public string Author { get; set; }

@@ -1,6 +1,6 @@
-﻿# Utilisez switch
-Exécutez le code et observez le résultat.
+﻿# Instructions
+## Steps
 
-Remplacez les conditions if/else par un switch.
-
-Exécutez le code. La sortie devrait être similaire.
+- Run the code and check the printed result
+- Replace the if/else sequence with a proper switch statement
+- Run the code. The output should be similar

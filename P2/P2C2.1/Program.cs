@@ -2,18 +2,18 @@
 using P2C2._1;
 
 /// <summary>
-/// Ce programme affiche :
-/// - un message Bonjour personnalisé si un argument a été envoyé lors de l'exécution du programme
-/// - le traditionnel message "Bonjour le monde" si ce n'est pas le cas
+/// This displays:
+/// - a personalized Hello message if an argument has been sent when running the program
+/// - The traditional "Hello world!" message if not
 /// </summary>
-/// <remarks>Créé par l'équipe éducative d'OpenClassrooms</remarks>
+/// <remarks>Created by the OpenClassrooms Education Team</remarks>
 
 if (args.Count() == 1)
 {
-    BonjourConditionel.DireBonjour(args[0]);
+    SayHelloTo(args[0]);
 }
 else
 {
-    BonjourConditionel.DireBonjour("le monde");
+    SayHelloTo("world");
 }
 

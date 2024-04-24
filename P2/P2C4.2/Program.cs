@@ -1,23 +1,24 @@
 ﻿
 using P2C4._2;
 
-List<int> temperaturesEnregistreDegresCelcius = new List<int>();
+List<int> recordedTemperaturesInDegreesCelcius = new List<int>();
 
-// remplir la liste à partir des valeurs fournies comme arguments en ligne de commande
-foreach (string stringRepresentationTemperature in args)
+// Fill the list from values provided as command-line arguments
+foreach (string stringRepresentationOfTemperature in args)
 {
-    int temperature = int.Parse(stringRepresentationTemperature);
-    temperaturesEnregistreDegresCelcius.Add(temperature);
+    int temperature = int.Parse(stringRepresentationOfTemperature);
+    recordedTemperaturesInDegreesCelcius.Add(temperature);
 }
 
-// Attention aux listes vides
-if (temperaturesEnregistreDegresCelcius.Count == 0)
+// Guard against empty list
+if (recordedTemperaturesInDegreesCelcius.Count == 0)
 {
-    Console.WriteLine("Impossible de calculer la moyenne avec une liste vide !");
+    Console.WriteLine("Cannot calculate average of empty list!");
 }
 else
 {
-    // Calculer et afficher la température moyenne
-    int temperatureMoyenne = MathSimple.CalculMoyenne(temperaturesEnregistreDegresCelcius);
-    Console.WriteLine("La température moyenne est " + temperatureMoyenne);
+    // Calculate and print the average temperature
+    int averageTemperature =
+        SimpleMath.CalculateAverage(recordedTemperaturesInDegreesCelcius);
+    Console.WriteLine("The average temperature is " + averageTemperature);
 }

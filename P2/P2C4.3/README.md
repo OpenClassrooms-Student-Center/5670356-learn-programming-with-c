@@ -1,13 +1,15 @@
-﻿# Exécutez le code
-Cliquez sur le bouton vert Run pour compiler et exécuter l'application.
-Saisissez dans le terminal ou console Powershell dans Visual Studio, "dotnet run 3 9 4". Que produit-elle en sortie ? Pourquoi obtenez-vous une valeur entière ?
-Saisissez dans le terminal ou console Powershell dans Visual Studio, "dotnet run". Pourquoi le programme plante-t-il ?
-Notez le nom de l'exception mentionnée dans la trace d'appel, DivideByZeroException.
+﻿# Run the code
 
-# Protection contre les arguments vides
-Ouvrez le fichier Program.cs. Entourez le code (à partir de List<int>...) avec un bloc try.
-Ajoutez un bloc catch qui prend en paramètre l'exception mentionnée dans la trace d'appel à l'étape précédente.
-À l'intérieur du bloc catch, ajoutez une instruction Console.WriteLine avec un message pertinent pour l'utilisateur, lui demandant de fournir des arguments numériques de type entier.
-Compilez et exécutez votre programme avec et sans fournir d'arguments.
-La trace d'appel devrait maintenant être remplacée par le message que vous avez écrit à l'intérieur de votre bloc catch.
-Bonus : ajoutez une autre instruction catch pour vous protéger contre les arguments non numériques, comme indiqué dans le cours.
+- Click on the green Run button to compile and execute the application.
+- Type in the terminal or PowerShell console in Visual Studio, "dotnet run 3 9 4". What does it produce as output? Why do you get an integer value?
+- Type in the terminal or PowerShell console in Visual Studio, "dotnet run". Why does the program crash?
+- Note the name of the exception mentioned in the call trace, DivideByZeroException.
+
+# Protection against empty arguments
+
+- Open the Program.cs file. Surround the code (starting from List<int>...) with a try block.
+- Add a catch block that takes as a parameter the exception mentioned in the call trace from the previous step.
+- Inside the catch block, add a Console.WriteLine statement with a relevant message for the user, asking them to provide integer numeric arguments.
+- Compile and execute your program with and without providing arguments.
+- The call trace should now be replaced by the message you wrote inside your catch block.
+- Bonus: add another catch statement to protect against non-numeric arguments, as shown in the course.

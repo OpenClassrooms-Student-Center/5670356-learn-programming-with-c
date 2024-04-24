@@ -1,61 +1,60 @@
-﻿string chaineUrl = "";
-int nombreArguments;
+﻿string urlString = "";
+int numberOfArguments;
 
 if (args == null)
 {
-    nombreArguments = 0;
+    numberOfArguments = 0;
 }
 else
 {
-    nombreArguments = args.Length;
+    numberOfArguments = args.Length;
 }
 
-// affecter une valeur à chaineUrl ou quitter
-switch (nombreArguments)
+// assign a value to urlString or exit
+switch (numberOfArguments)
 {
     case 0:
-        chaineUrl = DemanderUneUrl();
+        urlString = AskForUrl();
         break;
     case 1:
-        chaineUrl = args[0];
+        urlString = args[0];
         break;
     default:
-        Console.WriteLine("Veuillez exécuter le programme avec une URL ou rien du tout");
+        Console.WriteLine("Please run the program with the desired URL or no argument at all");
         Environment.Exit(-1);
         break;
 }
 
-Console.WriteLine("Vérification de l'URL " + chaineUrl);
+Console.WriteLine("Checking URL " + urlString);
 
-if (URLValide(chaineUrl))
+if (IsValidURL(urlString))
 {
-    Console.WriteLine(chaineUrl + " est une URL valide");
+    Console.WriteLine(urlString + " is a well-formed URL");
 }
 else
 {
-    Console.WriteLine(chaineUrl + " n'est pas une URL valide");
+    Console.WriteLine(urlString + " is not a well-formed URL");
 }
 
-
 /// <summary>
-/// Demander à l'utilisateur de saisir une URL
+/// Prompt user for URL
 /// </summary>
-/// <returns>Demander à l'utilisateur de saisir une URL</returns>
-static string DemanderUneUrl()
+/// <returns>Prompt user for URL</returns>
+public static string AskForUrl()
 {
-    Console.WriteLine("Veuillez saisir une URL valide");
+    Console.WriteLine("Please enter a valid URL");
     string url = Console.ReadLine();
     return url;
 }
 
 /// <summary>
-/// Vérifier le formatage d'une URL
+/// Check if a string is a well-formed URL
 /// </summary>
-/// <param name="chaineUrl"></param>
-/// <returns>vrai si le format correspond a une URL, sinon faux</returns>
-static bool URLValide(string chaineUrl)
+/// <param name="urlString"></param>
+/// <returns>true if the URL is well formed, else false</returns>
+private static bool IsValidURL(string urlString)
 {
-    if (Uri.IsWellFormedUriString(chaineUrl, UriKind.Absolute))
+    if (Uri.IsWellFormedUriString(urlString, UriKind.Absolute))
     {
         return true;
     }

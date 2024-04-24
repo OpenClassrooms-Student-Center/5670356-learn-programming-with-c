@@ -1,25 +1,25 @@
 ﻿using P2C2._2;
 
-Couleur couleurChoisie = Couleur.Vert;
+Color selectedColor = Color.green;
 
-// TODO : Remplacer la séquence if/else par une instruction switch équivalente qui fonctionne selon la valeur de couleurChoisie
-if (couleurChoisie == Couleur.Bleu)
+// TODO: Replace the if/else sequence with an equivalent switch statement that operates according to the value of the selectedColor variable
+if (selectedColor == Color.blue)
 {
-    Console.WriteLine("La couleur est bleue");
+    Console.WriteLine("The color is blue");
 }
-else if (couleurChoisie == Couleur.Vert)
+else if (selectedColor == Color.green)
 {
-    Console.WriteLine("La couleur est verte");
+    Console.WriteLine("The color is green");
 }
-else if (couleurChoisie == Couleur.Rouge)
+else if (selectedColor == Color.red)
 {
-    Console.WriteLine("La couleur est rouge");
+    Console.WriteLine("The color is red");
 }
-else if (couleurChoisie == Couleur.Jaune)
+else if (selectedColor == Color.yellow)
 {
-    Console.WriteLine("La couleur est jaune");
+    Console.WriteLine("The color is yellow");
 }
 else
 {
-    Console.WriteLine("Cette couleur n'est pas connue !");
+    Console.WriteLine("We do not know the color!");
 }

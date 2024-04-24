@@ -1,6 +1,8 @@
-﻿# Bonjour avec les conditions 
+﻿# Instructions  
 
-1. Cliquez sur le bouton vert pour compiler et exécuter l'application.
-2. Remarquez que la sortie est __Bonjour le monde !__ quand aucun argument n'est fourni.
-4. Dans la console Powershell en bas de Visual Studio, tapez "dotnet run Esther"
-5. Remarquez que la sortie est maintenant __Bonjour Esther !__ lorsqu'un seul argument a été fourni.
+  ## Steps
+
+  1. Click the green button to compile and execute the HelloWorld application.
+  2. Notice how the output is Hello world! when there are no arguments added.
+  3. In the Powershell or terminal in Visual Studio, enter "dotnet run Esther"
+  4. Notice that the output is now "Hello Esther!" when only one argument has been provided.

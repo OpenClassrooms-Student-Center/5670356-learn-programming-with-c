@@ -1,6 +1,6 @@
-﻿# Extrayez un contenu
-- Cliquez sur le bouton vert Run dans le coin supérieur droit pour compiler et exécuter l'application.
-- Il y a des erreurs. Corrigez et complétez les informations manquantes dans le fichier DonneeUtilisateur.cs pour la rendre accessible depuis Program.cs
-- Saisissez une URL valide : https://www.google.com, dans le fichier DonneeUtilisateur.cs
+﻿# Instructions
 
-La sortie devrait afficher le code HTML de la page d'accueil de Google.
+- Click on the green Run button in the top right corner to compile and execute the application.
+- There are errors. Correct and complete the missing information in the UserInput.cs file to make it accessible from Program.cs.
+- Enter a valid URL: https://www.google.com, in the DonneeUtilisateur.cs file.
+- The output should display the HTML code of Google's homepage.
